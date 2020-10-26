@@ -12,63 +12,75 @@
       crossorigin="anonymous"
     />
     <!--CSS-->
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
     <div class="fondo1">
-
       <nav class="navbar navbar-expand-lg cabecera">
         <a href="#" class="navbar-brand">
-          <img src="image/logo.png" alt="Store" class="logo">
+          <img src="image/logo.png" alt="Store" class="logo" />
         </a>
 
-        <button class="navbar-toggler" data-toggle="collapse" 
-      data-target="#contenido-nav" aria-controls="contenido-nav"
-      aria-expanded="false"
-      >
-      <span class="navbar-toggler-icon">
-        <img src="image/menuH.png" alt="" height="30px">
-      </span>
-      </button>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#contenido-nav"
+          aria-controls="contenido-nav"
+          aria-expanded="false"
+        >
+          <span class="navbar-toggler-icon">
+            <img src="image/menuH.png" alt="" height="30px" />
+          </span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="contenido-nav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a href="#" class="nav-link menuH">
-              Hombre
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link menuH">
-              Mujer
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link menuH">
-              Marcas
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link menuH">
-              Ofertas
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link menuH">
-              Contacto
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link menuH">
-              <img src="image/carrito.png" alt=""> 0
-            </a>
-          </li>
-        </ul>
-      </div>
+        <div class="collapse navbar-collapse" id="contenido-nav">
+          <ul class="navbar-nav ml-auto fondoNavbar">
+            <li class="nav-item">
+              <a href="#" class="nav-link menuH"> Hombre </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link menuH"> Mujer </a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link menuH dropdown-toggle"
+                id="dropdown-btn-marcas"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Marcas
+              </a>
+
+              <!--Contenido-->
+              <div class="dropdown-menu fondoDropdown" aria-labelledby="dropdown-btn-marcas">
+                <a href="#" class="dropdown-item">Adidas</a>
+                <a href="#" class="dropdown-item">Nike</a>
+                <a href="#" class="dropdown-item">Puma</a>
+                <a href="" class="dropdown-item">Charly</a>
+                <a href="" class="dropdown-item">Converse</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link menuH"> Ofertas </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link menuH"> Contacto </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link menuH">
+                <img src="image/carrito.png" alt="" /> 0
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
 
-      <!--Integrate-->
+    <!--Integrate-->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -79,6 +91,5 @@
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script>
-
   </body>
 </html>
