@@ -35,13 +35,56 @@
 
         <div class="collapse navbar-collapse" id="contenido-nav">
           <ul class="navbar-nav ml-auto fondoNavbar">
-            <li class="nav-item">
-              <a href="#" class="nav-link menuH"> Hombre </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link menuH"> Mujer </a>
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link menuH dropdown-toggle"
+                id="dropdown-btn-hombre"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Hombre
+              </a>
+
+              <!--Contenido-->
+              <div
+                class="dropdown-menu fondoDropdown"
+                aria-labelledby="dropdown-btn-hombre"
+              >
+              <a href="#" class="dropdown-item">Correr</a>
+              <a href="#" class="dropdown-item">Entrenamiento</a>
+              <a href="#" class="dropdown-item">Casual</a>
+              <a href="" class="dropdown-item">Zapatos</a>
+              <a href="" class="dropdown-item">Sandalias</a>
+              </div>
             </li>
 
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link menuH dropdown-toggle"
+                id="dropdown-btn-mujer"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Mujer
+              </a>
+
+              <!--Contenido-->
+              <div
+                class="dropdown-menu fondoDropdown"
+                aria-labelledby="dropdown-btn-mujer"
+              >
+                <a href="#" class="dropdown-item">Correr</a>
+                <a href="#" class="dropdown-item">Entrenamiento</a>
+                <a href="#" class="dropdown-item">Casual</a>
+                <a href="" class="dropdown-item">Zapatos</a>
+                <a href="" class="dropdown-item">Sandalias</a>
+              </div>
+            </li>
+            
             <li class="nav-item dropdown">
               <a
                 href="#"
@@ -55,7 +98,10 @@
               </a>
 
               <!--Contenido-->
-              <div class="dropdown-menu fondoDropdown" aria-labelledby="dropdown-btn-marcas">
+              <div
+                class="dropdown-menu fondoDropdown"
+                aria-labelledby="dropdown-btn-marcas"
+              >
                 <a href="#" class="dropdown-item">Adidas</a>
                 <a href="#" class="dropdown-item">Nike</a>
                 <a href="#" class="dropdown-item">Puma</a>
